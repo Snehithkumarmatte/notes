@@ -1,0 +1,4 @@
+-- m. Display Senior most employee name Job-wise
+SELECT JOB, ENAME
+FROM EMP
+WHERE (JOB, HIREDATE) IN (SELECT JOB, MIN(HIREDATE) FROM EMP GROUP BY JOB);

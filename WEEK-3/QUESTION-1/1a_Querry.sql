@@ -1,0 +1,2 @@
+SELECT * FROM EMP 
+WHERE sal = (SELECT MAX(sal) FROM EMP);
