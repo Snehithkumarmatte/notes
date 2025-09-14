@@ -1,0 +1,6 @@
+-- d. Display Senior Most Clerk Salary.
+SELECT SAL
+FROM EMP
+WHERE JOB = 'CLERK'
+ORDER BY HIREDATE ASC
+LIMIT 1;

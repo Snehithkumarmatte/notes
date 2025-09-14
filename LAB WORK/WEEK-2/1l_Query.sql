@@ -1,0 +1,4 @@
+-- l. Display Senior most employee name dept no-wise
+SELECT DEPTNO, ENAME
+FROM EMP
+WHERE (DEPTNO, HIREDATE) IN (SELECT DEPTNO, MIN(HIREDATE) FROM EMP GROUP BY DEPTNO);
